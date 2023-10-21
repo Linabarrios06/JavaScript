@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>restaurante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+    <h1>Restaurante Marino</h1>
+<h3>Bievenido seas a nuestro restaurante virtual marino,<br>
+   aquí podras hacer tu pedido en la comodidad de tú casa,<br>
+   o donde te encuentres disfruta de nuestra gran variadad <br>
+   de comidas y bebidas para tí y para tu familia <br> 
+   que hay en nuestro menú.
+</h3> 
+    <h2>MENÚ</h2>
+    <form id="order-form">
+        <h3>Platos</h3>
+        <select id="select-dish">
+            <option value="">Selecciona tú comida</option>
+            <option value="cazuela de mariscos personal">Cazuela de mariscos personal</option>
+            <option value="pescado frito personal">Pescado frito personal</option>
+            <option value="coctel de camarones personal">Coctel de camarones personal</option>
+            <option value="camarones en salsa personal">Camarones en salsa personal</option>
+            <option value="ceviche personal">Ceviche personal</option>
+            <option value="langostino personal">Langostino personal</option>
+            <option value="pulpo personal">Pulpo personal</option>
+            <option value="cangrejo personal">Cangrejo personal</option>
+            <option value="langosta personal">Langosta personal</option>
+            <option value="mejillones personal">Mejillones personal</option>
+            <option value="camarones personal">Camarones personal</option>
+            <option value="cazuela de mariscos grande">Cazuela de mariscos grande</option>
+            <option value="pescado frito grande">Pescado frito grande</option>
+            <option value="coctel de camarones grande">Coctel de camarones grande</option>
+            <option value="camarones en salsa grande">Camarones en salsa grande</option>
+            <option value="ceviche grande">Ceviche grande</option>
+            <option value="langostino grande">Langostino grande</option>
+            <option value="pulpo grande">Pulpo grande/option>
+            <option value="cangrejo grande">Cangrejo grande</option>
+            <option value="langosta grande">Langosta grande</option>
+            <option value="mejillones grande">Mejillones grande</option>
+            <option value="camarones grande">Camarones grande</option>
+
+        </select>
+        <input type="number" id="dish-quantity" value="" placeholder="Ingrese la cantidad">
+        
+        <h3>Bebidas</h3>
+        <select id="select-drink">
+            
+            <option value="">Selecciona tú bebida</option>
+            <option value="agua personal">Agua personal</option>
+            <option value="agua grande">Agua grande</option>
+            <option value="limonada personal">Limonada personal</option>
+            <option value="limonada grande">Limonada grande</option>
+            <option value="piña colada personal">Piña colada personal</option>
+            <option value="piña colada grande">Piña colada grande</option>
+            <option value="margarita personal">Margarita personal</option>
+            <option value="margarita grande">Margarita grande</option>
+            <option value="michelada personal">Michelada personal</option>
+            <option value="michelada grande">Michelada grande</option>
+            <option value="daiquirí personal">Daiquirí personal</option>
+            <option value="daiquirí grande">Daiquirí gran</option>
+            <option value="mojito personal">Mojito personal</option>
+            <option value="mojito grande">Mojito grande</option>
+            
+            </select>
+
+        <input type="number" id="drink-quantity" value="" placeholder="Ingrese la cantidad">
+        
+        <button type="button" id="add-to-order">Agregar al Pedido</button>
+        
+    </form>
+
+    <h2>Descripcion</h2>
+    <ul id="order-summary"></ul>
+    <br>
+    <p> <H3>Total:  $</H3>  <span id="total-price">0</span></p>
+
+    <script src="restaurante.js"></script>
+</body>
+
+</html>
